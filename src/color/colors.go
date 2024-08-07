@@ -116,7 +116,6 @@ func (c Ansi) ResolveTemplate(env runtime.Environment) Ansi {
 	tmpl := &template.Text{
 		Template: string(c),
 		Context:  nil,
-		Env:      env,
 	}
 
 	text, err := tmpl.Render()
